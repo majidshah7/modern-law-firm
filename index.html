@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellaris & Co. | Modern Law Firm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="noise-overlay"></div>
+    <div class="bg-gradient-overlay"></div>
+
+    <!-- Header & Animated Logo -->
+    <header>
+        <div class="logo-container">
+            <svg class="logo-icon" viewBox="0 0 24 24">
+                <path d="M12 2L2 22h20L12 2zm0 4.2L18.4 19H5.6L12 6.2z" />
+                <path d="M12 10l-3 6h6l-3-6z" />
+            </svg>
+            <div class="logo-text text-accent">Stellaris <span style="font-weight: 300;">& Co.</span></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="attorneys.html">Attorneys</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="mobile-menu-btn">☰</button>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section class="section"
+        style="min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative;">
+        <!-- Generating a random hero background concept -->
+        <div
+            style="position: absolute; top:0; left:0; width:100%; height:100%; background: url('https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80') center/cover; opacity: 0.15; z-index: -1;">
+        </div>
+        <div class="container text-center reveal">
+            <span class="section-subtitle">Excellence in Legal Representation</span>
+            <h1
+                style="font-size: 4.5rem; margin-bottom: 2rem; max-width: 900px; margin-left: auto; margin-right: auto; line-height: 1.1;">
+                Justice Redefined for the <span class="text-accent">Modern Era</span>
+            </h1>
+            <p style="font-size: 1.25rem; color: var(--text-muted); max-width: 600px; margin: 0 auto 3rem auto;">
+                We blend decades of high-stakes litigation experience with innovative legal strategies to protect what
+                matters most to you.
+            </p>
+            <div style="display: flex; gap: 1.5rem; justify-content: center;">
+                <a href="contact.html" class="btn btn-primary">Schedule Consultation</a>
+                <a href="services.html" class="btn btn-outline">Explore Practices</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Philosophy / Intro -->
+    <section class="section">
+        <div class="container grid-2 reveal">
+            <div>
+                <span class="section-subtitle">Our Philosophy</span>
+                <h2 class="section-title">A New Standard of <span class="text-accent">Advocacy</span></h2>
+                <p class="mb-6 text-muted" style="font-size: 1.1rem; color: var(--text-muted);">
+                    At Stellaris & Co., we believe that modern legal challenges require agile, forward-thinking
+                    solutions. Our approach discards the antiquated models of traditional firms in favor of dynamic,
+                    client-centric representation.
+                </p>
+                <div style="display: flex; gap: 2rem; margin-top: 2rem;">
+                    <div>
+                        <h4 class="text-accent" style="font-size: 2.5rem;">$1.2B+</h4>
+                        <p style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Recovered for
+                            Clients</p>
+                    </div>
+                    <div>
+                        <h4 class="text-accent" style="font-size: 2.5rem;">98%</h4>
+                        <p style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Trial Success Rate
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="glass" style="padding: 3rem; border-radius: 12px; position: relative;">
+                <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem;">"They don't just practice law; they command the
+                    courtroom with unyielding precision."</h3>
+                <p style="color: var(--text-muted);">— The Legal Horizon Review</p>
+                <div style="position: absolute; right: 2rem; bottom: 2rem; opacity: 0.1;">
+                    <svg width="100" height="100" viewBox="0 0 24 24">
+                        <path
+                            d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"
+                            fill="var(--accent-gold)" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Practice Areas -->
+    <section class="section">
+        <div class="container text-center mb-8 reveal">
+            <span class="section-subtitle">Areas of Expertise</span>
+            <h2 class="section-title">Comprehensive <span class="text-accent">Legal Solutions</span></h2>
+        </div>
+        <div class="container grid-3">
+            <div class="card glass reveal delay-1">
+                <div class="card-icon">🏛️</div>
+                <h3 class="mb-4">Corporate Litigation</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">Navigating complex commercial disputes,
+                    shareholder conflicts, and breach of contract cases with strategic foresight.</p>
+            </div>
+            <div class="card glass reveal delay-2">
+                <div class="card-icon">🛡️</div>
+                <h3 class="mb-4">Criminal Defense</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">Vigorous defense against white-collar
+                    allegations, utilizing a relentless approach to protect your liberties.</p>
+            </div>
+            <div class="card glass reveal delay-3">
+                <div class="card-icon">💼</div>
+                <h3 class="mb-4">Mergers & Acquisitions</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">Facilitating seamless transitions, deep-dive
+                    due diligence, and robust structuring for modern enterprises.</p>
+            </div>
+        </div>
+        <div class="container text-center mt-8 reveal" style="margin-top: 3rem;">
+            <a href="services.html" class="btn btn-outline">View All Practice Areas</a>
+        </div>
+    </section>
+
+    <!-- 4. Why Choose Us -->
+    <section class="section" style="background: rgba(255,255,255,0.02); margin-top: 4rem;">
+        <div class="container grid-2 reveal">
+            <div class="glass"
+                style="height: 100%; border-radius: 12px; background: url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80') center/cover;">
+                <!-- Image placeholder, darkened -->
+                <div
+                    style="width: 100%; height: 100%; background: linear-gradient(to top, var(--bg-primary) 0%, transparent 100%);">
+                </div>
+            </div>
+            <div style="padding-left: 2rem;">
+                <span class="section-subtitle">The Stellaris Edge</span>
+                <h2 class="section-title">Why Industry Leaders <span class="text-accent">Trust Us</span></h2>
+                <ul style="list-style: none; margin-top: 2rem;">
+                    <li style="margin-bottom: 1.5rem; display: flex; align-items: flex-start; gap: 1rem;">
+                        <span style="color: var(--accent-gold); font-size: 1.5rem;">✓</span>
+                        <div>
+                            <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Bespoke Legal Strategies</h4>
+                            <p style="color: var(--text-muted); font-size: 0.95rem;">We do not use templates. Every case
+                                receives a custom blueprint designed for absolute victory.</p>
+                        </div>
+                    </li>
+                    <li style="margin-bottom: 1.5rem; display: flex; align-items: flex-start; gap: 1rem;">
+                        <span style="color: var(--accent-gold); font-size: 1.5rem;">✓</span>
+                        <div>
+                            <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Unrivaled Discretion</h4>
+                            <p style="color: var(--text-muted); font-size: 0.95rem;">For high-profile individuals and
+                                corporations, your privacy is guarded with ironclad security protocols.</p>
+                        </div>
+                    </li>
+                    <li style="display: flex; align-items: flex-start; gap: 1rem;">
+                        <span style="color: var(--accent-gold); font-size: 1.5rem;">✓</span>
+                        <div>
+                            <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem;">24/7 Elite Access</h4>
+                            <p style="color: var(--text-muted); font-size: 0.95rem;">Legal crises don't wait for
+                                business hours. Our senior partners are available to clients around the clock.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Attorneys Preview -->
+    <section class="section">
+        <div class="container text-center mb-8 reveal">
+            <span class="section-subtitle">Leadership</span>
+            <h2 class="section-title">Meet the <span class="text-accent">Partners</span></h2>
+        </div>
+        <div class="container grid-3">
+            <div class="glass reveal delay-1" style="border-radius: 8px; overflow: hidden;">
+                <div
+                    style="height: 300px; background: url('https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80') top center/cover; filter: grayscale(100%); transition: all 0.5s;">
+                </div>
+                <div style="padding: 1.5rem; text-align: center;">
+                    <h3 style="font-size: 1.3rem;">Jonathan Vance</h3>
+                    <p class="text-accent" style="font-size: 0.9rem; margin-top: 0.5rem; text-transform: uppercase;">
+                        Managing Partner</p>
+                </div>
+            </div>
+            <div class="glass reveal delay-2" style="border-radius: 8px; overflow: hidden;">
+                <div
+                    style="height: 300px; background: url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80') top center/cover; filter: grayscale(100%); transition: all 0.5s;">
+                </div>
+                <div style="padding: 1.5rem; text-align: center;">
+                    <h3 style="font-size: 1.3rem;">Eleanor Sterling</h3>
+                    <p class="text-accent" style="font-size: 0.9rem; margin-top: 0.5rem; text-transform: uppercase;">
+                        Head of Corporate Litigation</p>
+                </div>
+            </div>
+            <div class="glass reveal delay-3" style="border-radius: 8px; overflow: hidden;">
+                <div
+                    style="height: 300px; background: url('https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80') top center/cover; filter: grayscale(100%); transition: all 0.5s;">
+                </div>
+                <div style="padding: 1.5rem; text-align: center;">
+                    <h3 style="font-size: 1.3rem;">Marcus Pierce</h3>
+                    <p class="text-accent" style="font-size: 0.9rem; margin-top: 0.5rem; text-transform: uppercase;">
+                        Senior Defense Counsel</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Case Results -->
+    <section class="section" style="background: linear-gradient(45deg, var(--bg-secondary) 0%, transparent 100%);">
+        <div class="container text-center mb-8 reveal">
+            <span class="section-subtitle">Track Record</span>
+            <h2 class="section-title">Landmark <span class="text-accent">Victories</span></h2>
+        </div>
+        <div class="container grid-3">
+            <div class="card glass reveal delay-1" style="border-top: 3px solid var(--accent-gold);">
+                <h4 style="font-size: 2rem; margin-bottom: 0.5rem;">$145M</h4>
+                <p style="font-weight: 600; margin-bottom: 1rem;">Antitrust Litigation</p>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Secured a historic settlement for a tech
+                    consortium against monopolistic practices.</p>
+            </div>
+            <div class="card glass reveal delay-2" style="border-top: 3px solid var(--accent-gold);">
+                <h4 style="font-size: 2rem; margin-bottom: 0.5rem;">Acquittal</h4>
+                <p style="font-weight: 600; margin-bottom: 1rem;">Federal Securities Fraud</p>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Complete exoneration of a Fortune 500 CEO in a
+                    high-profile DOJ prosecution.</p>
+            </div>
+            <div class="card glass reveal delay-3" style="border-top: 3px solid var(--accent-gold);">
+                <h4 style="font-size: 2rem; margin-bottom: 0.5rem;">$89M</h4>
+                <p style="font-weight: 600; margin-bottom: 1rem;">Intellectual Property</p>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Jury verdict resolving a decade-long patent
+                    infringement dispute in pharmaceuticals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Client Testimonials -->
+    <section class="section">
+        <div class="container grid-2 reveal">
+            <div>
+                <span class="section-subtitle">Reputation</span>
+                <h2 class="section-title">What Our Clients <span class="text-accent">Say</span></h2>
+                <p class="text-muted mb-6">Our ultimate metric of success is the peace of mind we restore to our clients
+                    when everything is on the line.</p>
+            </div>
+            <div class="glass" style="padding: 2.5rem; border-radius: 12px; border-left: 4px solid var(--accent-gold);">
+                <p style="font-size: 1.1rem; font-style: italic; margin-bottom: 1.5rem;">"When my company faced a
+                    hostile takeover layered in complex litigation, Stellaris & Co. dismantled the opposition in mere
+                    weeks. Their precision is terrifying to opponents and deeply comforting to clients."</p>
+                <h4 style="font-size: 1.1rem;">Alexander Wright</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">CEO, Nexus Global</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Insights / Blog Preview -->
+    <section class="section">
+        <div class="container text-center mb-8 reveal">
+            <span class="section-subtitle">Intelligence</span>
+            <h2 class="section-title">Legal <span class="text-accent">Insights</span></h2>
+        </div>
+        <div class="container grid-3">
+            <div class="reveal delay-1" style="border-bottom: 1px solid var(--glass-border); padding-bottom: 2rem;">
+                <span style="color: var(--accent-gold); font-size: 0.85rem; text-transform: uppercase;">Corporate Law •
+                    Oct 12, 2026</span>
+                <h3 style="margin: 1rem 0; font-size: 1.25rem;">Navigating AI Regulations in Boardroom Decisions</h3>
+                <a href="#" class="text-accent" style="font-size: 0.9rem; font-weight: 600;">Read Briefing →</a>
+            </div>
+            <div class="reveal delay-2" style="border-bottom: 1px solid var(--glass-border); padding-bottom: 2rem;">
+                <span style="color: var(--accent-gold); font-size: 0.85rem; text-transform: uppercase;">Litigation • Sep
+                    28, 2026</span>
+                <h3 style="margin: 1rem 0; font-size: 1.25rem;">The Future of Cross-Border Dispute Resolutions</h3>
+                <a href="#" class="text-accent" style="font-size: 0.9rem; font-weight: 600;">Read Briefing →</a>
+            </div>
+            <div class="reveal delay-3" style="border-bottom: 1px solid var(--glass-border); padding-bottom: 2rem;">
+                <span style="color: var(--accent-gold); font-size: 0.85rem; text-transform: uppercase;">Defense • Sep
+                    10, 2026</span>
+                <h3 style="margin: 1rem 0; font-size: 1.25rem;">Digital Forensics: Shielding Your Enterprise</h3>
+                <a href="#" class="text-accent" style="font-size: 0.9rem; font-weight: 600;">Read Briefing →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. FAQ Section -->
+    <section class="section" style="background: rgba(255,255,255,0.01);">
+        <div class="container text-center mb-8 reveal">
+            <h2 class="section-title">Frequently Asked <span class="text-accent">Questions</span></h2>
+        </div>
+        <div class="container reveal" style="max-width: 800px; margin: 0 auto;">
+            <div class="glass" style="margin-bottom: 1rem; padding: 1.5rem; border-radius: 8px;">
+                <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--accent-gold);">Do you handle
+                    international arbitration?</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">Yes. We have a dedicated desk for cross-border
+                    arbitration operating in Geneva, London, and New York jurisdictions.</p>
+            </div>
+            <div class="glass" style="margin-bottom: 1rem; padding: 1.5rem; border-radius: 8px;">
+                <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--accent-gold);">How does the
+                    consultation process work?</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">An initial confidential briefing is held with a
+                    senior partner to assess merit, followed by a bespoke strategy proposal within 48 hours.</p>
+            </div>
+            <div class="glass" style="margin-bottom: 1rem; padding: 1.5rem; border-radius: 8px;">
+                <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--accent-gold);">What is your fee
+                    structure?</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">We offer transparent, phase-based retainers
+                    and, in exceptional corporate litigation cases, contingency-based alternate fee arrangements.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Final CTA -->
+    <section class="section">
+        <div class="container glass text-center reveal"
+            style="padding: 5rem 2rem; border-radius: 16px; background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(19, 28, 38, 0.8) 100%);">
+            <h2 class="section-title" style="font-size: 3rem;">Ready to Secure Your <span
+                    class="text-accent">Future?</span></h2>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 2.5rem auto; font-size: 1.1rem;">
+                Delaying action often concedes the advantage. Contact us today to arrange a confidential strategic
+                briefing.
+            </p>
+            <a href="contact.html" class="btn btn-primary" style="font-size: 1.2rem; padding: 1.2rem 3rem;">Request a
+                Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo-text text-accent mb-4" style="font-size: 1.5rem;">Stellaris & Co.</div>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 80%;">A premier law firm
+                        engineering unprecedented legal victories for modern titans of industry.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Practices</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="attorneys.html">Attorneys</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Practices</h4>
+                    <ul>
+                        <li><a href="#">Litigation</a></li>
+                        <li><a href="#">White-Collar</a></li>
+                        <li><a href="#">M&A Advisory</a></li>
+                        <li><a href="#">IP Shield</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Headquarters</h4>
+                    <ul>
+                        <li style="color: var(--text-muted); font-size: 0.9rem;">1000 Horizon Avenue<br>Suite
+                            4500<br>New York, NY 10001</li>
+                        <li style="color: var(--text-muted); font-size: 0.9rem; margin-top: 1rem;">
+                            inquiries@stellarisco.law<br>+1 (800) 555-0198</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Stellaris & Co. Law Firm. All rights reserved. | <a href="#"
+                    style="color: var(--accent-gold);">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Stellaris & Co.</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .form-control {
+            width: 100%;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--glass-border);
+            color: var(--text-main);
+            border-radius: 4px;
+            margin-bottom: 1.5rem;
+            font-family: var(--font-primary);
+            transition: var(--transition-smooth);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="noise-overlay"></div>
+    <div class="bg-gradient-overlay"></div>
+
+    <header>
+        <div class="logo-container">
+            <svg class="logo-icon" viewBox="0 0 24 24">
+                <path d="M12 2L2 22h20L12 2zm0 4.2L18.4 19H5.6L12 6.2z" />
+                <path d="M12 10l-3 6h6l-3-6z" />
+            </svg>
+            <div class="logo-text text-accent">Stellaris <span style="font-weight: 300;">& Co.</span></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="attorneys.html">Attorneys</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="mobile-menu-btn">☰</button>
+    </header>
+
+    <!-- 1. Hero -->
+    <section class="section" style="padding-top: 12rem; padding-bottom: 4rem;">
+        <div class="container text-center reveal">
+            <span class="section-subtitle">Secure Communications</span>
+            <h1 style="font-size: 3.5rem; margin-bottom: 1.5rem;">Confidential <span
+                    class="text-accent">Engagement</span></h1>
+            <p style="font-size: 1.15rem; color: var(--text-muted); max-width: 600px; margin: 0 auto;">
+                All inquiries are protected by attorney-client privilege. Schedule an encrypted strategy briefing with
+                our senior partners.
+            </p>
+        </div>
+    </section>
+
+    <!-- 2. Contact Form & Info -->
+    <section class="section">
+        <div class="container grid-2 reveal">
+            <!-- Form -->
+            <div class="glass" style="padding: 3rem; border-radius: 12px;">
+                <h3 style="margin-bottom: 2rem; font-size: 1.8rem;">Initialize Request</h3>
+                <form action="#" method="POST"
+                    onsubmit="event.preventDefault(); alert('Inquiry securely transmitted.');">
+                    <input type="text" class="form-control" placeholder="Full Name / Corporation Name" required>
+                    <input type="email" class="form-control" placeholder="Secure Email Address" required>
+                    <input type="tel" class="form-control" placeholder="Direct Phone Line">
+                    <select class="form-control" required style="appearance: none;">
+                        <option value="" disabled selected>Nature of Inquiry...</option>
+                        <option value="corporate">Corporate Litigation</option>
+                        <option value="white-collar">White-Collar Defense</option>
+                        <option value="ma">Mergers & Acquisitions</option>
+                        <option value="ip">Intellectual Property</option>
+                        <option value="other">Other High-Stakes Matter</option>
+                    </select>
+                    <textarea class="form-control" placeholder="Brief non-confidential description of the matter..."
+                        required></textarea>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Transmit Request</button>
+                </form>
+            </div>
+            <!-- Info -->
+            <div style="padding: 2rem;">
+                <h3 style="font-size: 2rem; margin-bottom: 1.5rem;">Direct Contacts</h3>
+                <ul style="list-style: none;">
+                    <li style="margin-bottom: 2rem;">
+                        <span class="text-accent"
+                            style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">General Counsel
+                            Inbox</span>
+                        <p style="font-size: 1.2rem; margin-top: 0.5rem;">inquiries@stellarisco.law</p>
+                    </li>
+                    <li style="margin-bottom: 2rem;">
+                        <span class="text-accent"
+                            style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Urgent Litigation
+                            Hotline (24/7)</span>
+                        <p style="font-size: 1.2rem; margin-top: 0.5rem;">+1 (800) 555-0199</p>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem;">Use only for federal
+                            raids, SEC subpoenas, or immediate crisis response.</p>
+                    </li>
+                    <li>
+                        <span class="text-accent"
+                            style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Media &
+                            Press</span>
+                        <p style="font-size: 1.2rem; margin-top: 0.5rem;">media@stellarisco.law</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Global Offices -->
+    <section class="section" style="background: rgba(255,255,255,0.02);">
+        <div class="container text-center mb-8 reveal">
+            <h2 class="section-title">Strategic <span class="text-accent">Headquarters</span></h2>
+        </div>
+        <div class="container grid-3">
+            <div class="card glass text-center reveal delay-1">
+                <h3 style="margin-bottom: 1rem;">New York</h3>
+                <p class="text-muted" style="font-size: 0.95rem;">1000 Horizon Avenue<br>Suite 4500<br>New York, NY
+                    10001</p>
+                <a href="#" class="text-accent mt-4"
+                    style="display: inline-block; margin-top: 1rem; font-size: 0.9rem;">View Map</a>
+            </div>
+            <div class="card glass text-center reveal delay-2">
+                <h3 style="margin-bottom: 1rem;">London</h3>
+                <p class="text-muted" style="font-size: 0.95rem;">25 Financial Square<br>Level 30, The City<br>London
+                    EC3V 4AB</p>
+                <a href="#" class="text-accent mt-4"
+                    style="display: inline-block; margin-top: 1rem; font-size: 0.9rem;">View Map</a>
+            </div>
+            <div class="card glass text-center reveal delay-3">
+                <h3 style="margin-bottom: 1rem;">Geneva</h3>
+                <p class="text-muted" style="font-size: 0.95rem;">Place des Nations 8<br>1202 Genève<br>Switzerland</p>
+                <a href="#" class="text-accent mt-4"
+                    style="display: inline-block; margin-top: 1rem; font-size: 0.9rem;">View Map</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Retainer Protocol -->
+    <section class="section">
+        <div class="container grid-2 reveal">
+            <div>
+                <h2 class="section-title">The Retainer <span class="text-accent">Protocol</span></h2>
+                <p class="text-muted mb-4">Because we provide highly bespoke representation, we meticulously vet
+                    potential cases to ensure no conflicts of interest and to verify that our aggressive litigation
+                    style aligns with your objectives.</p>
+            </div>
+            <div class="glass" style="padding: 2.5rem; border-radius: 12px; border-left: 4px solid var(--accent-gold);">
+                <ol style="color: var(--text-muted); margin-left: 1.5rem;">
+                    <li style="margin-bottom: 1rem;"><strong>Submission:</strong> Form encrypted and routed to Senior
+                        Conflict Analyst.</li>
+                    <li style="margin-bottom: 1rem;"><strong>Vetting:</strong> Immediate 12-hour conflict clearance
+                        check.</li>
+                    <li style="margin-bottom: 1rem;"><strong>Briefing:</strong> Secure video or physical meeting
+                        arranged with Lead Counsel.</li>
+                    <li><strong>Deployment:</strong> Formalization of strategy and immediate mobilization.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo-text text-accent mb-4" style="font-size: 1.5rem;">Stellaris & Co.</div>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 80%;">A premier law firm
+                        engineering unprecedented legal victories for modern titans of industry.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Practices</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="attorneys.html">Attorneys</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Practices</h4>
+                    <ul>
+                        <li><a href="#">Litigation</a></li>
+                        <li><a href="#">White-Collar</a></li>
+                        <li><a href="#">M&A Advisory</a></li>
+                        <li><a href="#">IP Shield</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Headquarters</h4>
+                    <ul>
+                        <li style="color: var(--text-muted); font-size: 0.9rem;">1000 Horizon Avenue<br>Suite
+                            4500<br>New York, NY 10001</li>
+                        <li style="color: var(--text-muted); font-size: 0.9rem; margin-top: 1rem;">
+                            inquiries@stellarisco.law<br>+1 (800) 555-0198</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Stellaris & Co. Law Firm. All rights reserved. | <a href="#"
+                    style="color: var(--accent-gold);">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
